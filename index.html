@@ -1,28 +1,111 @@
-
+<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户头像网站</title>
+    <title>个人空间</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>用户头像网站</h1>
-    <div class="user">
-        <img src="images/chicken.jpg" alt="用户1头像">
-        <h2>用户1</h2>
-        <button onclick="uploadMedia('user1')">上传照片/视频</button>
-    </div>
-    <div class="user">
-        <img src="images/girl.jpg" alt="用户2头像">
-        <h2>用户2</h2>
-        <button onclick="uploadMedia('user2')">上传照片/视频</button>
-    </div>
-    <div class="user">
-        <img src="images/anime.jpg" alt="用户3头像">
-        <h2>用户3</h2>
-        <button onclick="uploadMedia('user3')">上传照片/视频</button>
+    <div class="container">
+        <header>
+            <h1>个人空间</h1>
+            <nav>
+                <a href="#" class="active">主页</a>
+                <a href="#">相册</a>
+                <a href="#">动态</a>
+                <a href="#">设置</a>
+            </nav>
+        </header>
+
+        <div class="users-container">
+            <!-- 用户1 -->
+            <div class="user-card">
+                <div class="user-header">
+                    <img src="./images/chicken.jpg" alt="等风来头像" class="avatar">
+                    <h2>等风来</h2>
+                    <p class="user-status">在线</p>
+                </div>
+                <div class="user-stats">
+                    <div class="stat">
+                        <i class="fas fa-image"></i>
+                        <span>23 张照片</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-video"></i>
+                        <span>5 个视频</span>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <button class="action-btn upload-btn" onclick="uploadMedia('user1')">
+                        <i class="fas fa-upload"></i> 上传
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-edit"></i> 编辑
+                    </button>
+                </div>
+                <div class="media-gallery" id="gallery-user1"></div>
+            </div>
+
+            <!-- 用户2 -->
+            <div class="user-card">
+                <div class="user-header">
+                    <img src="./images/girl.jpg" alt="土豆豆头像" class="avatar">
+                    <h2>土豆豆</h2>
+                    <p class="user-status">离线</p>
+                </div>
+                <div class="user-stats">
+                    <div class="stat">
+                        <i class="fas fa-image"></i>
+                        <span>15 张照片</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-video"></i>
+                        <span>3 个视频</span>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <button class="action-btn upload-btn" onclick="uploadMedia('user2')">
+                        <i class="fas fa-upload"></i> 上传
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-edit"></i> 编辑
+                    </button>
+                </div>
+                <div class="media-gallery" id="gallery-user2"></div>
+            </div>
+
+            <!-- 用户3 -->
+            <div class="user-card">
+                <div class="user-header">
+                    <img src="./images/anime.jpg" alt="fleurnohappy头像" class="avatar">
+                    <h2>fleurnohappy</h2>
+                    <p class="user-status">在线</p>
+                </div>
+                <div class="user-stats">
+                    <div class="stat">
+                        <i class="fas fa-image"></i>
+                        <span>31 张照片</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-video"></i>
+                        <span>8 个视频</span>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <button class="action-btn upload-btn" onclick="uploadMedia('user3')">
+                        <i class="fas fa-upload"></i> 上传
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-edit"></i> 编辑
+                    </button>
+                </div>
+                <div class="media-gallery" id="gallery-user3"></div>
+            </div>
+        </div>
     </div>
     <script src="js/main.js"></script>
 </body>
 </html>
+
