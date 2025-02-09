@@ -39,6 +39,7 @@ function uploadMedia(user) {
                 deleteBtn.style.width = '20px';
                 deleteBtn.style.height = '20px';
                 deleteBtn.style.cursor = 'pointer';
+                deleteBtn.style.zIndex = '1000';
                 deleteBtn.onclick = () => wrapper.remove();
                 
                 wrapper.appendChild(deleteBtn);
@@ -58,4 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.transition = 'opacity 0.5s ease-in-out';
         document.body.style.opacity = '1';
     }, 100);
-});
+}); 
