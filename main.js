@@ -59,4 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.transition = 'opacity 0.5s ease-in-out';
         document.body.style.opacity = '1';
     }, 100);
+
+    const videos = document.querySelectorAll('.media-gallery video');
+    videos.forEach(video => {
+        video.style.width = '80%'; // 设置宽度为80%
+        video.style.margin = '10px auto'; // 居中显示
+    });
 }); 
