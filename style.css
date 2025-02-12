@@ -183,6 +183,15 @@ nav a.active, nav a:hover {
     transform: scale(1.05);
 }
 
+.media-gallery video {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .users-container {
